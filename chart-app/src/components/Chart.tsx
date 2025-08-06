@@ -17,8 +17,8 @@ const Chart: React.FC<ChartProps> = ({ chartData }) => {
     if (!svgRef.current || !chartData.data.length) return;
 
     const margin = { top: 20, right: 30, bottom: 40, left: 50 };
-    const width = 800 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
+    const width = 2500 - margin.left - margin.right;
+    const height = 700 - margin.top - margin.bottom;
 
     d3.select(svgRef.current).selectAll("*").remove();
 
